@@ -236,5 +236,5 @@ omit = [
 ]
 
 [build-system]
-requires = ["maturin>=1.0,<2.0"]
+requires = ["maturin>=1.0,<2.0", "setuptools>=67.2.0; python_version>='3.12'",]
 build-backend = "maturin"
