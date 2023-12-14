@@ -1,11 +1,11 @@
 repo_name: kwongtn/pendulum
-report_id: 8642bf50a0781a8484fec5d5c5c266ba
+report_id: a2480bcb65b8867fe7b1bc162d1f6358
 repo_type: Public
-timestamp: '2023-11-09T18:48:23+00:00'
-requested_by: mevemo
+timestamp: '2023-12-14T09:45:53+00:00'
+requested_by: kwongtn
 provider: github
 branch: master
-detected_tools_count: 6
+detected_tools_count: 9
 tools:
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -26,6 +26,17 @@ tools:
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1070/v7txhrjp9pdqrkdtxxp0.png
   detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: pyproject.toml
+  last_updated_by: Sébastien Eustace
+  last_updated_on: 2018-03-01 20:25:21.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -43,7 +54,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/tests.yml"
+  detection_source: ".github/workflows/codspeed.yml"
   last_updated_by: Sébastien Eustace
   last_updated_on: 2023-08-09 17:43:59.000000000 Z
 - name: PyPI
@@ -57,9 +68,29 @@ tools:
   detection_source: pyproject.toml
   last_updated_by: Sébastien Eustace
   last_updated_on: 2018-03-01 20:25:21.000000000 Z
+- name: HTML
+  description: Hypertext Markup Language for creating web pages.
+  website_url: http://
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/2270/no-img-open-source.png
+  detection_source: docs/theme/main.html
+  last_updated_by: Sébastien Eustace
+  last_updated_on: 2018-01-31 21:31:33.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: pyproject.toml
+  last_updated_by: Sébastien Eustace
+  last_updated_on: 2023-09-30 22:48:16.000000000 Z
 - name: python-dateutil
   description: Extensions to the standard Python datetime module
-  package_url: https://pypi.org/python-dateutil
+  package_url: https://pypi.org/project/python-dateutil
   version: 2.8.2
   license: NRL
   open_source: true
@@ -67,7 +98,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
-  detection_source_url: poetry.lock
+  detection_source_url: https://github.com/kwongtn/pendulum/blob/master/poetry.lock
   detection_source: pyproject.toml
-  last_updated_by: Sébastien Eustace
-  last_updated_on: 2023-09-30 22:48:16.000000000 Z
+  last_updated_by: Kwong Tung Nan
+  last_updated_on: 2023-12-05 00:37:18.000000000 Z
